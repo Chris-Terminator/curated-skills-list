@@ -1,0 +1,5 @@
+﻿interface:
+  display_name: "SEO Strategy"
+  short_description: "Optimize pages and audit websites for search performance."
+  icon_large: "./assets/seo-strategy.png"
+  default_prompt: "Review this page or website and build an SEO optimization strategy."

@@ -1,0 +1,5 @@
+﻿interface:
+  display_name: "Conversion Copywriter"
+  short_description: "Write conversion-focused landing and service page copy."
+  icon_large: "./assets/conversion-copywriting.png"
+  default_prompt: "Write conversion-focused page copy using customer language and clear proof."

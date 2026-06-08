@@ -1,0 +1,5 @@
+﻿interface:
+  display_name: "Feature Design Assistant"
+  short_description: "Turn product ideas into specs, flows, and implementation plans."
+  icon_large: "./assets/feature-design-assistant.png"
+  default_prompt: "Help me turn this feature idea into a clear design and implementation spec."

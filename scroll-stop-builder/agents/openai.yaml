@@ -1,0 +1,5 @@
+﻿interface:
+  display_name: "Scroll-Stop Builder"
+  short_description: "Build scroll-driven video websites from product animation clips."
+  icon_large: "./assets/scroll-stop-builder.png"
+  default_prompt: "Build a scroll-controlled website from this product or animation video."

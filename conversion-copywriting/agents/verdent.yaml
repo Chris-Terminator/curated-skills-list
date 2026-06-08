@@ -1,0 +1,7 @@
+category: Design
+interface:
+  display_name: 'Conversion Copywriting'
+  short_description: 'Write conversion-focused landing and service page copy'
+  icon_dark: './assets/conversion-copywriting.png'
+  icon_light: './assets/conversion-copywriting.png'
+  default_prompt: 'Write conversion-focused page copy using customer language and clear proof.'

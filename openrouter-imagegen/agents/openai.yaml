@@ -1,0 +1,5 @@
+﻿interface:
+  display_name: "OpenRouter Image Generator"
+  short_description: "Generate and edit images through OpenRouter image models."
+  icon_large: "./assets/openrouter-imagegen.png"
+  default_prompt: "Generate or edit an image through OpenRouter with the right model settings."

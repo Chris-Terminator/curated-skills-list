@@ -1,0 +1,5 @@
+﻿interface:
+  display_name: "Scroll-Stop Prompter"
+  short_description: "Create linked prompts for product deconstruction animations."
+  icon_large: "./assets/scroll-stop-prompter.png"
+  default_prompt: "Create scroll-stopping image and video prompts for this product concept."

@@ -1,0 +1,5 @@
+﻿interface:
+  display_name: "fal.ai Video Generator"
+  short_description: "Generate image-to-video clips with fal.ai Kling models."
+  icon_large: "./assets/fal-ai-videogen.png"
+  default_prompt: "Generate an image-to-video motion prompt and workflow for this still image."

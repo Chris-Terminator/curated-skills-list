@@ -1,0 +1,5 @@
+﻿interface:
+  display_name: "Website Intelligence"
+  short_description: "Research competitors and build market-informed websites."
+  icon_large: "./assets/website-intelligence.png"
+  default_prompt: "Research this website and its competitors, then turn the findings into a premium site strategy."
