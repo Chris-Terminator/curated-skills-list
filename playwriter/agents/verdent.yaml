@@ -1,0 +1,7 @@
+category: Testing
+interface:
+  display_name: 'Playwriter'
+  short_description: 'Control your Chrome browser via Playwriter extension.'
+  icon_dark: './assets/icon-dark.png'
+  icon_light: './assets/icon-light.png'
+  default_prompt: 'Use Playwriter to automate browser interactions on my existing Chrome.'

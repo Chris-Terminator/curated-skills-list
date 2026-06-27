@@ -1,0 +1,5 @@
+﻿interface:
+  display_name: "Playwriter Browser Control"
+  short_description: "Control an existing Chrome browser with Playwright snippets."
+  icon_large: "./assets/playwriter.png"
+  default_prompt: "Control my Chrome browser with Playwriter to inspect or automate this page."
