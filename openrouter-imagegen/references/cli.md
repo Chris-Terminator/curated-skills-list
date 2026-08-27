@@ -19,8 +19,8 @@ Use a local environment variable. Do not paste the key into chat.
 - `--prompt` inline prompt text
 - `--prompt-file` prompt from a text file
 - `--model` one of:
-  - `google/gemini-3.1-flash-image-preview`
-  - `google/gemini-3-pro-image-preview`
+  - `google/gemini-3.1-flash-image`
+  - `google/gemini-3-pro-image`
 - `--image-size` or `--resolution` one of `1K`, `2K`, `4K`
 - `--aspect-ratio` one of the documented ratios
 - `--image` attach a local image file, repeatable
@@ -43,25 +43,25 @@ python scripts/openrouter_image_gen.py --prompt "Editorial product photo of a ma
 ### 4K wide hero image
 
 ```bash
-python scripts/openrouter_image_gen.py --prompt "Premium landing page hero image for an AI automation agency, dark cinematic gradients, restrained composition" --model "google/gemini-3-pro-image-preview" --image-size 4K --aspect-ratio 16:9 --stem hero
+python scripts/openrouter_image_gen.py --prompt "Premium landing page hero image for an AI automation agency, dark cinematic gradients, restrained composition" --model "google/gemini-3-pro-image" --image-size 4K --aspect-ratio 16:9 --stem hero
 ```
 
 ### Text plus local image attachment
 
 ```bash
-python scripts/openrouter_image_gen.py --prompt "Keep the object identity, re-stage this as a luxury catalog shot with soft side lighting" --image "input/product.png" --model "google/gemini-3.1-flash-image-preview" --image-size 2K --aspect-ratio 4:5 --stem catalog
+python scripts/openrouter_image_gen.py --prompt "Keep the object identity, re-stage this as a luxury catalog shot with soft side lighting" --image "input/product.png" --model "google/gemini-3.1-flash-image" --image-size 2K --aspect-ratio 4:5 --stem catalog
 ```
 
 ### Text plus multiple remote images
 
 ```bash
-python scripts/openrouter_image_gen.py --prompt "Combine these references into one clean architectural rendering with premium materials" --image-url "https://example.com/ref-1.jpg" --image-url "https://example.com/ref-2.jpg" --model "google/gemini-3-pro-image-preview" --image-size 1K --aspect-ratio 3:2 --stem composite
+python scripts/openrouter_image_gen.py --prompt "Combine these references into one clean architectural rendering with premium materials" --image-url "https://example.com/ref-1.jpg" --image-url "https://example.com/ref-2.jpg" --model "google/gemini-3-pro-image" --image-size 1K --aspect-ratio 3:2 --stem composite
 ```
 
 ### Dry run
 
 ```bash
-python scripts/openrouter_image_gen.py --prompt "Minimal poster with brutalist typography" --model "google/gemini-3.1-flash-image-preview" --image-size 1K --aspect-ratio 4:1 --dry-run
+python scripts/openrouter_image_gen.py --prompt "Minimal poster with brutalist typography" --model "google/gemini-3.1-flash-image" --image-size 1K --aspect-ratio 4:1 --dry-run
 ```
 
 ## Aspect ratios

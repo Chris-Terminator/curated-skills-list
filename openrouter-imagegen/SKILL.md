@@ -1,6 +1,6 @@
 ---
 name: openrouter-imagegen
-description: "This skill should be used when generating or editing images through OpenRouter with specific OpenRouter image models, including `google/gemini-3.1-flash-image-preview` and `google/gemini-3-pro-image-preview`. This includes text-to-image, image-plus-text editing, local image attachments, image URL inputs, aspect ratio control, 1K/2K/4K image size selection, model overrides, and reusable CLI-driven image workflows that require `OPENROUTER_API_KEY`."
+description: "This skill should be used when generating or editing images through OpenRouter with specific OpenRouter image models, including `google/gemini-3.1-flash-image` and `google/gemini-3-pro-image`. This includes text-to-image, image-plus-text editing, local image attachments, image URL inputs, aspect ratio control, 1K/2K/4K image size selection, model overrides, and reusable CLI-driven image workflows that require `OPENROUTER_API_KEY`."
 ---
 
 # OpenRouter Image Generation
@@ -19,10 +19,10 @@ Generate or edit images through OpenRouter using the bundled CLI at `scripts/ope
 
 Only use these model IDs unless the skill is explicitly updated:
 
-- `google/gemini-3.1-flash-image-preview`
-- `google/gemini-3-pro-image-preview`
+- `google/gemini-3.1-flash-image`
+- `google/gemini-3-pro-image`
 
-Default to `google/gemini-3.1-flash-image-preview` unless the user requests a different one.
+Default to `google/gemini-3.1-flash-image` unless the user requests a different one.
 
 ## Workflow
 
@@ -37,7 +37,7 @@ Default to `google/gemini-3.1-flash-image-preview` unless the user requests a di
 
 - Require `OPENROUTER_API_KEY` for live calls.
 - Enforce a minimum image size of `1K`.
-- Prefer `1K` by default unless the user asks for `2K` or `4K`.
+- Prefer `2K` by default unless the user asks for `1K` or `4K`.
 - Prefer writing outputs into the codebase rather than an isolated temp folder.
 - Put the text prompt before images in multipart message content.
 - Use local image files as base64 data URLs and remote images as direct URLs.
@@ -57,7 +57,7 @@ python scripts/openrouter_image_gen.py --prompt "Minimal black ceramic bottle on
 ### Generate from text plus local images
 
 ```bash
-python scripts/openrouter_image_gen.py --prompt "Keep the product shape, turn this into a premium studio campaign shot" --image "input/product.png" --image-size 1K --aspect-ratio 1:1
+python scripts/openrouter_image_gen.py --prompt "Keep the product shape, turn this into a premium studio campaign shot" --image "input/product.png" --image-size 2K --aspect-ratio 1:1
 ```
 
 ### Generate from text plus remote images
@@ -68,8 +68,8 @@ python scripts/openrouter_image_gen.py --prompt "Blend these references into one
 
 ## Model guidance
 
-- Use `google/gemini-3.1-flash-image-preview` for the fastest default workflow and for extended aspect ratios such as `1:4`, `4:1`, `1:8`, and `8:1`.
-- Use `google/gemini-3-pro-image-preview` when the user wants stronger text rendering, more complex image reasoning, or premium multi-image composition.
+- Use `google/gemini-3.1-flash-image` for the fastest default workflow and for extended aspect ratios such as `1:4`, `4:1`, `1:8`, and `8:1`.
+- Use `google/gemini-3-pro-image` when the user wants stronger text rendering, more complex image reasoning, or premium multi-image composition.
 
 ## References
 

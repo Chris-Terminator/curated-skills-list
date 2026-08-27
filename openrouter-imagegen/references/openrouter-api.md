@@ -48,9 +48,6 @@ Documented image sizes:
 - `1K`
 - `2K`
 - `4K`
-- `0.5K` for `google/gemini-3.1-flash-image-preview` only
-
-This skill intentionally enforces a minimum of `1K`, so it does not expose `0.5K`.
 
 ## Confirmed aspect ratios
 
@@ -93,13 +90,13 @@ This skill decodes that payload and writes it directly to disk.
 
 ## Model notes gathered from docs and model pages
 
-### `google/gemini-3.1-flash-image-preview`
+### `google/gemini-3.1-flash-image`
 
 - Image generation and editing model
 - Supports extended aspect ratios
-- Supports documented `0.5K`, `1K`, `2K`, and `4K` size controls, but this skill exposes only `1K+`
+- Supports documented `1K`, `2K`, and `4K` size controls, but this skill exposes only `1K+`
 
-### `google/gemini-3-pro-image-preview`
+### `google/gemini-3-pro-image`
 
 - Higher-end image generation and editing model
 - OpenRouter model page describes stronger text rendering, multi-image blending, identity preservation, localized edits, lighting adjustments, and support for `2K/4K` outputs with flexible aspect ratios

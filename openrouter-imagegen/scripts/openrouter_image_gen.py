@@ -14,7 +14,7 @@ import urllib.request
 
 
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
-DEFAULT_MODEL = "google/gemini-3.1-flash-image-preview"
+DEFAULT_MODEL = "google/gemini-3.1-flash-image"
 DEFAULT_IMAGE_SIZE = "1K"
 DEFAULT_ASPECT_RATIO = "1:1"
 FALLBACK_OUT_DIR = "output/openrouter-imagegen"
@@ -26,8 +26,8 @@ CODEBASE_ASSET_DIRS = (
 )
 
 ALLOWED_MODELS = {
-    "google/gemini-3.1-flash-image-preview",
-    "google/gemini-3-pro-image-preview",
+    "google/gemini-3.1-flash-image",
+    "google/gemini-3-pro-image",
 }
 
 STANDARD_ASPECT_RATIOS = {
@@ -96,10 +96,10 @@ def validate_image_size(image_size: str) -> None:
 def validate_aspect_ratio(model: str, aspect_ratio: str) -> None:
     if aspect_ratio in STANDARD_ASPECT_RATIOS:
         return
-    if aspect_ratio in FLASH_ONLY_ASPECT_RATIOS and model == "google/gemini-3.1-flash-image-preview":
+    if aspect_ratio in FLASH_ONLY_ASPECT_RATIOS and model == "google/gemini-3.1-flash-image":
         return
     allowed = sorted(STANDARD_ASPECT_RATIOS)
-    if model == "google/gemini-3.1-flash-image-preview":
+    if model == "google/gemini-3.1-flash-image":
         allowed += sorted(FLASH_ONLY_ASPECT_RATIOS)
     die("aspect-ratio is not allowed for the selected model: " + ", ".join(allowed))
 
