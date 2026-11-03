@@ -1,0 +1,4 @@
+interface:
+  display_name: "Fix My UI"
+  short_description: "Turn vibecoded, AI-looking UI into a designed interface"
+  default_prompt: "Use $fix-my-ui on this screen so it stops looking AI-generated."
