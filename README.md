@@ -39,7 +39,7 @@ Check the individual skill instructions for setup requirements.
 
 [fix-my-ui](./fix-my-ui/) is a lightly rewritten version of [heydamir/unslop](https://github.com/heydamir/unslop).
 
-I renamed it to `fix-my-ui` to avoid a naming conflict with the separate writing-focused `unslop` skill from [backnotprop/pstack](https://github.com/backnotprop/pstack).
+I renamed it to `fix-my-ui` to avoid a naming conflict with the separate `unslop` skill from [pstack](https://github.com/cursor/plugins/tree/main/pstack/skills/unslop), which focuses on cleaning up AI-generated writing.
 
 The two skills serve different purposes:
 
@@ -62,7 +62,7 @@ The following skills come from existing open-source projects. Credit goes to the
 | [frontend-design](./frontend-design/) | [Anthropic — anthropics/skills](https://www.skills.sh/anthropics/skills/frontend-design) |
 | [remotion-best-practices](./remotion-best-practices/) | [Remotion — remotion-dev/skills](https://www.skills.sh/remotion-dev/skills/remotion-best-practices) |
 | [seo-aeo-best-practices](./seo-aeo-best-practices/) | [Sanity — sanity-io/agent-toolkit](https://www.skills.sh/sanity-io/agent-toolkit/seo-aeo-best-practices) |
-| [unslop](./unslop/) | [backnotprop/pstack](https://github.com/backnotprop/pstack), also available through [cursor/plugins](https://www.skills.sh/cursor/plugins/unslop) |
+| [unslop](./unslop/) | [pstack — cursor/plugins](https://github.com/cursor/plugins/tree/main/pstack/skills/unslop) ([skills.sh](https://www.skills.sh/cursor/plugins/unslop)) |
 
 This is a curated collection, not a claim of original authorship over the included third-party skills. Refer to the upstream projects for their documentation, licensing, and updates.
 
